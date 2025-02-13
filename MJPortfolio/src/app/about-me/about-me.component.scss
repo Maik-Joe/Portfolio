@@ -1,9 +1,10 @@
 .section3 {
-    background-color: rgb(215, 215, 215);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgb(215, 215, 215) 60%);
     width: 100%;
     max-width: 1440px;
     height: fit-content;
 }
+
 
 .aboutMe {
     display: flex;
@@ -119,7 +120,9 @@
             font-family: "Montserrat";
         }
 
-        >span {}
+        >span {
+               font-family: "OpenSans";
+        }
 
         >img {
             position: relative;
@@ -129,6 +132,4 @@
 
         }
     }
-
-
 }
