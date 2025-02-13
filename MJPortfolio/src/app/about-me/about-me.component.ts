@@ -13,7 +13,7 @@ export class AboutMeComponent {
     lines.forEach((line) => {
       const rect = line.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        line.style.width = '60%';
+        line.style.width = '47%';
       } else {
         line.style.width = '0';
       }
