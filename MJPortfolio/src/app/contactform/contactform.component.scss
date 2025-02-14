@@ -1,0 +1,98 @@
+.section7 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1120px;
+    gap: 80px;
+
+    .contact-headline {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+
+        >p {
+            font-size: 40px;
+            font-family: "Montserrat";
+            font-weight: bold;
+        }
+
+        >span {
+            font-family: "OpenSans";
+        }
+    }
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        font-family: "OpenSans";
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+        border: none;
+        margin-top: 40px;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+        padding: 10px;
+        background-color: rgb(215, 215, 215);
+        outline: none;
+    }
+
+    input:focus {
+        outline: none;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .submit_btn {
+        display: flex;
+        justify-content: center;
+
+        button {
+            cursor: pointer;
+            padding: 1cqh 30px;
+            border: none;
+            border: solid 3px black;
+            background-color: rgb(215, 215, 215);
+            font-family: "OpenSans";
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 40px;
+
+            &:hover {
+                background-color: rgb(26, 26, 26);
+                color: white;
+            }
+        }
+    }
+
+    div {
+        span {
+            color: red;
+        }
+    }
+}
