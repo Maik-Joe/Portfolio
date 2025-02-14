@@ -54,10 +54,6 @@ export class SkillsComponent {
 
   SkilltreeLearning= [
     {
-      img: "figma.icon.png",
-      name: "FIGMA",
-    },
-    {
       img: "css.icon.png",
       name: "CSS",
     },
