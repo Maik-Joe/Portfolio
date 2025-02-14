@@ -5,14 +5,18 @@ import { FooterComponent } from '../shared/footer/footer.component';
 import { AboutMeComponent } from "../about-me/about-me.component";
 import { SkillsComponent } from "../skills/skills.component";
 import { PortfolioComponent } from "../portfolio/portfolio.component";
+import { RecommandingsComponent } from "../recommandings/recommandings.component";
 
 @Component({
   selector: 'app-landing-page',
-  imports: [HeroComponent,
+  imports: [
+    HeroComponent,
     HeaderComponent,
     FooterComponent,
     AboutMeComponent,
-    SkillsComponent, PortfolioComponent],
+    SkillsComponent,
+    PortfolioComponent,
+    RecommandingsComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })

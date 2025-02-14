@@ -1,0 +1,117 @@
+.section6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .recommandings {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1120px;
+    }
+
+    .recommandings-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .recommandings-title {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+
+        >p {
+            font-size: 40px;
+            font-family: "Montserrat";
+            font-weight: bold;
+        }
+
+        >span {
+            font-family: "OpenSans";
+        }
+    }
+
+    .recommandings-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 400px;
+        margin-top: 80px;
+        margin-left: -100px;
+        border-radius: 20px;
+        background-color: rgba(29, 29, 29, 0.966);
+        color: white;
+        border: solid 2px rgb(97, 97, 97);
+        margin-bottom: 40px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: relative;
+
+        &:hover {
+            z-index: 1;
+            scale: 1.1;
+            background-image: url(./../../../public/assets/img/papertexture-2061711_1280.jpg);
+            background-position: center;
+            background-size: cover;
+            border-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        >img {
+            display: none;
+            position: absolute;
+            width: 48px;
+            top: -10px;
+            left: -20px;
+            z-index: 8;
+        }
+
+        &:hover>img {
+            display: block;
+        }
+    }
+
+    .recommandings-box:nth-child(1) {
+        transform: translateY(0px);
+    }
+
+    .recommandings-box:nth-child(2) {
+        transform: translateY(20px);
+    }
+
+    .recommandings-box:nth-child(3) {
+        transform: translateY(40px);
+    }
+
+    .recommandings-box:nth-child(1):hover>img {
+        top: -20px;
+        left: -20px;
+    }
+
+    .recommandings-box:nth-child(2):hover>img {
+        top: -15px;
+        left: -25px;
+    }
+
+    .recommandings-box:nth-child(3):hover>img {
+        top: -10px;
+        left: -20px;
+    }
+
+    .recommandings-description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+        gap: 16px;
+
+        >span {
+            font-size: 20px;
+            font-family: "OpenSans";
+        }
+    }
+}
