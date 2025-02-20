@@ -35,28 +35,30 @@
         color: white;
         height: 80px;
         margin-left: 40px;
-    
-        > p {
+
+        >p {
             font-size: 24px;
             cursor: pointer;
             font-family: "Montserrat";
             transition: background-color 0.3s ease-in;
-    
+
             &:hover {
-                background-color: rgb(10, 10, 10);
+                background-color: rgb(215, 215, 215);
+                border-radius: 5px 5px 0 0;
+                color: black;
                 padding: 20px;
             }
         }
-    
-        > p.active {
-            background-color: rgb(10, 10, 10);
-            color: white;
+
+        >p.active {
+            background-color: rgb(215, 215, 215);
             font-weight: bold;
+            color: black;
             padding: 20px;
-            border-radius: 5px 5px 0 0 ;
+            border-radius: 5px 5px 0 0;
         }
     }
-    
+
 
     .portfolio-projects-wrapper {
         justify-content: center;
@@ -70,43 +72,48 @@
             align-items: center;
             margin: 0 40px;
             border-radius: 0 5px 5px 5px;
-            background-color: rgb(10, 10, 10);
+            background-color: rgb(215, 215, 215);
         }
 
-        .portfolio-description,.portfolio-image-section {
+        .portfolio-description,
+        .portfolio-image-section {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             width: 100%;
             padding: 10px 40px;
-            color: white;
-  
+            font-family: "OpenSans";
+            font-weight: 500;
         }
-            .portfolio-image {
-                >img {
-                    width: 500px;
-                    height: 300px;
-                    object-fit: cover;
-                    border-radius: 5px;
-                }
-            }
 
-            .portfolio-projects-links {
-                padding: 20px;
+        .portfolio-image {
+            >img {
+                width: 500px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 5px;
+                border: solid 3px black;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
             }
+        }
+
+        .portfolio-projects-links {
+            padding: 20px;
+        }
     }
 
-    a { 
+    a {
         text-decoration: none;
-        color: white;
+        color: black;
         font-weight: bold;
         padding: 5px;
         border-radius: 10px;
-        &:hover {
-            background-color: white;
-            color: black;
+        transition: background-color 0.2s ease-in;
 
+        &:hover {
+            background-color: rgb(26, 26, 26);
+            color: white;
         }
     }
 
@@ -115,7 +122,6 @@
         flex-direction: column;
         text-align: center;
         gap: 8px;
-        color: white;
         font-family: "Montserrat";
         padding: 20px;
 

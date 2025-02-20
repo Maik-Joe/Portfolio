@@ -70,12 +70,24 @@ a {
     font-weight: bold;
     font-size: 24px;
     color: black;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgb(215, 215, 215) 50%);
+    display: inline-block;
+    transition: text-decoration 0.3s ease-in-out;
+    animation: pulse 0.5s infinite alternate ease-in-out;
+
     &:hover {
         text-decoration: underline;
     }
 }
 
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
 
 .search-skills {
     display: flex;
@@ -83,6 +95,7 @@ a {
     gap: 16px;
     margin-top: 80px;
     text-align: center;
+
     >p {
         font-family: "OpenSans";
     }
