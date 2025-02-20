@@ -6,34 +6,36 @@
             <span>What my colleagues say about me:</span>
         </div>
         <div class="recommandings-container">
-            <div class="recommandings-box">
-                <img src="./../../.././assets/icons/quotes.png">
+            <div class="recommandings-box" (click)="toggleActive($event)">
+                <img src="./../../../assets/icons/quotes.png">
                 <div class="recommandings-description">
                     <span>Maik had a consistently positive impact on our project. He led the team with dedication,
                         provided constructive solutions, and stayed focused under pressure. His problem-solving skills,
                         clear communication, and motivating nature strengthened teamwork and made collaboration
                         enjoyable.</span><br>
-                    <span>Tarik Sabanovic</span>
+                    <span><b>Tarik Sabanovic</b></span>
                 </div>
             </div>
-            <div class="recommandings-box">
-                <img src="./../../.././assets/icons/quotes.png">
+            <div class="recommandings-box" (click)="toggleActive($event)">
+                <img src="./../../../assets/icons/quotes.png">
                 <div class="recommandings-description">
                     <span>Maik Joe is a valuable teammate with technical expertise and a strong collaborative spirit. He
                         offers helpful insights, tackles challenges with a problem-solving mindset, and is always
                         reliable. His dedication makes him a great asset, and I’d gladly work with him again.</span><br>
-                    <span>Ioannis Karakasidis</span>
+                    <span><b>Ioannis  Karakasidis</b></span>
                 </div>
             </div>
-            <div class="recommandings-box">
-                <img src="./../../.././assets/icons/quotes.png">
+            <div class="recommandings-box" (click)="toggleActive($event)">
+                <img src="./../../../assets/icons/quotes.png">
                 <div class="recommandings-description">
                     <span>With a sharp problem-solving mindset and a commitment to clean, efficient code, Maik is a
                         highly skilled developer. He adapts quickly to new technologies and consistently delivers
                         high-quality results. His strong communication and teamwork make collaboration smooth and
                         productive.</span><br>
-                    <span>Lukas Froh</span>
+                    <span><b>Lukas Froh</b></span>
                 </div>
             </div>
         </div>
-        <div class="seperator"><img src="./../../../assets/icons/separatorBlack 1.png"></div>
+    </div>
+</div>
+<div class="seperator"><img src="./../../../assets/icons/separatorBlack 1.png"></div>
