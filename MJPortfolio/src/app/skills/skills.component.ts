@@ -54,12 +54,12 @@ export class SkillsComponent {
 
   SkilltreeLearning= [
     {
-      img: "css.icon.png",
-      name: "CSS",
+      img: "python.icon.png",
+      name: "PYTHON",
     },
     {
-      img: "js.icon.png",
-      name: "JAVASCRIPT",
+      img: "django.icon.png",
+      name: "DJANGO",
     },
   ]
 }
