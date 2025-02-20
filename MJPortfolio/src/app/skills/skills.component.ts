@@ -1,67 +1,30 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  standalone: true,
+  imports: [TranslateModule], 
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-
-
+  
   SkilltreeNow = [
-    {
-      img: "html.icon.png",
-      name: "HTML",
-    },
-    {
-      img: "css.icon.png",
-      name: "CSS",
-    },
-    {
-      img: "js.icon.png",
-      name: "JAVASCRIPT",
-    },
-    {
-      img: "ts.icon.png",
-      name: "TYPESCRIPT",
-    },
-    {
-      img: "angular.icon.png",
-      name: "ANGULAR",
-    },
-    {
-      img: "firebase.icon.png",
-      name: "FIREBASE",
-    },
-    {
-      img: "git.icon.png",
-      name: "GIT",
-    },
-    {
-      img: "api.icon.png",
-      name: "REST API",
-    },
-    {
-      img: "scrum.icon.png",
-      name: "SCRUM",
-    },
-    {
-      img: "material.icon.png",
-      name: "MATERIAL",
-    },
-  ]
+    { img: "html.icon.png", name: "SKILLS.HTML" },
+    { img: "css.icon.png", name: "SKILLS.CSS" },
+    { img: "js.icon.png", name: "SKILLS.JAVASCRIPT" },
+    { img: "ts.icon.png", name: "SKILLS.TYPESCRIPT" },
+    { img: "angular.icon.png", name: "SKILLS.ANGULAR" },
+    { img: "firebase.icon.png", name: "SKILLS.FIREBASE" },
+    { img: "git.icon.png", name: "SKILLS.GIT" },
+    { img: "api.icon.png", name: "SKILLS.REST_API" },
+    { img: "scrum.icon.png", name: "SKILLS.SCRUM" },
+    { img: "material.icon.png", name: "SKILLS.MATERIAL" }
+  ];
 
-  SkilltreeLearning= [
-    {
-      img: "python.icon.png",
-      name: "PYTHON",
-    },
-    {
-      img: "django.icon.png",
-      name: "DJANGO",
-    },
-  ]
+  SkilltreeLearning = [
+    { img: "python.icon.png", name: "SKILLS.PYTHON" },
+    { img: "django.icon.png", name: "SKILLS.DJANGO" }
+  ];
 }
-
-

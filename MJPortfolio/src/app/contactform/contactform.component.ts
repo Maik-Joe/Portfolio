@@ -1,20 +1,36 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';  
 
 @Component({
   selector: 'app-contactform',
-  imports: [FormsModule],
+  standalone: true,
+  imports: [FormsModule, TranslateModule],  
   templateUrl: './contactform.component.html',
-  styleUrl: './contactform.component.scss'
+  styleUrls: ['./contactform.component.scss']
 })
 export class ContactformComponent {
-
   http = inject(HttpClient);
-  contactData = { name: "", email: "", phone: "", message: "", privacyAccepted: false };
+
+  contactData = {
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    privacyAccepted: false
+  };
+
   formSubmitted = false;
   mailTest = true;
-  post = { endPoint: 'https://deineDomain.de/sendMail.php', body: (payload: any) => JSON.stringify(payload), options: { headers: { 'Content-Type': 'text/plain', responseType: 'text' } } };
+
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: { 'Content-Type': 'text/plain', responseType: 'text' }
+    }
+  };
 
   onSubmit(ngForm: NgForm) {
     if (!ngForm.valid || !this.contactData.privacyAccepted) return;
@@ -22,10 +38,11 @@ export class ContactformComponent {
   }
 
   private sendMail(ngForm: NgForm) {
-    this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe({
-      next: () => this.handleSuccess(ngForm),
-      error: (error) => console.error(error),
-    });
+    this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
+      .subscribe({
+        next: () => this.handleSuccess(ngForm),
+        error: (error) => console.error(error),
+      });
   }
 
   private handleSuccess(ngForm: NgForm) {
@@ -37,5 +54,5 @@ export class ContactformComponent {
 
   isFormValid(): boolean {
     return this.contactData.privacyAccepted;
-  }  
+  }
 }

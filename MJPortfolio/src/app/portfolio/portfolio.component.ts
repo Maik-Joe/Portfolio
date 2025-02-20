@@ -1,49 +1,65 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
-  standalone: true,  // Falls du Standalone Components verwendest
-  imports: [CommonModule],  // Hier CommonModule importieren!
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent {
+
   projects = [
     {
-      name: 'Join',
-      description: `
-       <p>Join is a sophisticated task management app inspired by Kanban boards. It was developed in close collaboration with two other developers and helps teams efficiently organize their tasks.</p><br>
-       <p>With drag-and-drop functionality, flexible categories, and an intuitive user interface, Join provides a seamless and efficient workflow. The app is optimized with Firebase for real-time data storage and designed to be fully responsive for both desktop and mobile devices.</p><br>
-       <p>The development process was both technically and organizationally challenging, but it provided valuable insights into teamwork, UX design, and scalable architecture.</p>
-
-`,
+      name: 'Join', 
+      descriptionKeys: [
+        'PORTFOLIO.JOIN.DESCRIPTION1',
+        'PORTFOLIO.JOIN.DESCRIPTION2',
+        'PORTFOLIO.JOIN.DESCRIPTION3'
+      ],
       image: '../../../assets/img/JoinLAP.png',
-      technologies: ['html.icon.png', 'css.icon.png', 'js.icon.png', 'git.icon.png', 'firebase.icon.png'],
+      technologies: [
+        'html.icon.png',
+        'css.icon.png',
+        'js.icon.png',
+        'git.icon.png',
+        'firebase.icon.png'
+      ],
       demoLink: 'https://join-app-demo.com',
       githubLink: 'https://github.com/your-repo/join'
     },
     {
-      name: 'Hogwarts API',
-      description: `
-      <p>The Hogwarts API was used to create a dynamic website that displays data on characters, houses, and spells from the world of Harry Potter.</p><br>
-      <p>By leveraging RESTful API requests, the site fetches and presents structured information in an interactive and engaging way. Users can explore different aspects of the Harry Potter universe with a clear and responsive design.</p><br>
-      <p>The development focused on seamless API integration, efficient data handling, and an intuitive user experience, making the project both technically and creatively rewarding.</p>
-`,
+      name: 'Hogwarts API', 
+      descriptionKeys: [
+        'PORTFOLIO.HOGWARTS_API.DESCRIPTION1',
+        'PORTFOLIO.HOGWARTS_API.DESCRIPTION2',
+        'PORTFOLIO.HOGWARTS_API.DESCRIPTION3'
+      ],
       image: '../../../assets/img/HogwartsApiLAP.png',
-      technologies: ['html.icon.png', 'css.icon.png', 'js.icon.png', 'api.icon.png'],
+      technologies: [
+        'html.icon.png',
+        'css.icon.png',
+        'js.icon.png',
+        'api.icon.png'
+      ],
       demoLink: 'https://hogwarts-api-demo.com',
       githubLink: 'https://github.com/your-repo/hogwarts-api'
     },
     {
-      name: 'El Pollo Loco',
-      description: `
-      <p>El Pollo Loco is an entertaining 2D jump-and-run game where the player must dodge chickens and defeat dangerous enemies.</p><br>
-      <p>The game was developed using native JavaScript canvas elements and follows an object-oriented programming (OOP) approach to ensure clean and modular code.</p><br>
-      <p>With smooth animations, responsive controls, and engaging mechanics, El Pollo Loco delivers an immersive gameplay experience while demonstrating the power of OOP in game development.</p>
-`,
+      name: 'EL pollo loco', 
+      descriptionKeys: [
+        'PORTFOLIO.EL_POLLO_LOCO.DESCRIPTION1',
+        'PORTFOLIO.EL_POLLO_LOCO.DESCRIPTION2',
+        'PORTFOLIO.EL_POLLO_LOCO.DESCRIPTION3'
+      ],
       image: '../../../assets/img/ElpolloLAP.png',
-      technologies: ['html.icon.png', 'css.icon.png', 'js.icon.png'],
+      technologies: [
+        'html.icon.png',
+        'css.icon.png',
+        'js.icon.png'
+      ],
       demoLink: 'https://el-pollo-loco-demo.com',
       githubLink: 'https://github.com/your-repo/el-pollo-loco'
     }

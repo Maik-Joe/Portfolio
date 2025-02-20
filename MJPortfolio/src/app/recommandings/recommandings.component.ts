@@ -1,12 +1,31 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-recommandings',
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   templateUrl: './recommandings.component.html',
-  styleUrl: './recommandings.component.scss'
+  styleUrls: ['./recommandings.component.scss']
 })
 export class RecommandingsComponent {
   activeBox: HTMLElement | null = null;
+
+  recommendations = [
+    {
+      textKey: 'RECOMMANDINGS.REC1.TEXT',
+      author: 'Tarik Sabanovic'
+    },
+    {
+      textKey: 'RECOMMANDINGS.REC2.TEXT',
+      author: 'Ioannis Karakasidis'
+    },
+    {
+      textKey: 'RECOMMANDINGS.REC3.TEXT',
+      author: 'Lukas Froh'
+    }
+  ];
 
   constructor(private renderer: Renderer2, private el: ElementRef) {}
 

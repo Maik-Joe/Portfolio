@@ -1,0 +1,112 @@
+{
+  "HEADER": {
+    "ABOUT_ME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT_ME": "Kontakt"
+  },
+  "HERO": {
+    "HI": "Hallo, ich bin",
+    "NAME": "Maik Joe",
+    "JOB_TITLE": "Frontend-Entwickler",
+    "TAGLINE": "DEINE VISION / MEIN CODE / UNSERE WELT",
+    "DESCRIPTION": "Die Zukunft des Programmierens ist eine Leinwand für grenzenlose Innovationen, die Lösungen vorantreibt, die unsere Lebensweise verändern und uns näher zusammenbringen.\nTechnologie gibt uns die Möglichkeit, Brücken zu schlagen, monotone Aufgaben zu automatisieren und Erlebnisse zu schaffen, die nahtlos und gleichzeitig außergewöhnlich sind.\nVon künstlicher Intelligenz, die ganze Branchen revolutioniert, bis hin zu nachhaltigen Technologien, die unsere Umwelt neu gestalten – jede Zeile Code trägt zu einer intelligenteren, inklusiveren Welt bei.\nWährend wir Grenzen überschreiten und das scheinbar Unmögliche neu definieren, wird unsere gemeinsame Vision zur Grundlage für bahnbrechende Entwicklungen, die kommende Generationen beeinflussen.\nGemeinsam programmieren wir nicht nur für die Gegenwart, sondern für die Welt, die wir erschaffen wollen."
+  },
+  "ABOUT_ME": {
+    "TITLE": "ÜBER MICH",
+    "DESCRIPTION": "Ich bin ein leidenschaftlicher Frontend-Entwickler aus der Nähe von Rosenheim und liebe es, innovative und kreative Lösungen zu entwickeln. Seit ich das Programmieren entdeckt habe, ist jedes Projekt ein neues Abenteuer, das mich herausfordert und inspiriert.\nMein Fokus liegt auf der Gestaltung moderner, benutzerfreundlicher und optisch ansprechender Webanwendungen. Ich arbeite gerne mit den neuesten Technologien und Trends, um einzigartige digitale Erlebnisse zu schaffen. Sauberer Code, Performance und eine durchdachte Benutzererfahrung sind wesentliche Aspekte meiner Arbeit.\nOb kreative Animationen, interaktive Interfaces oder maßgeschneiderte Lösungen – es begeistert mich immer, Ideen in funktionale und ästhetische Anwendungen zu verwandeln.",
+    "PROJECTS": {
+      "TITLE": "PROJEKTE",
+      "DESCRIPTION": "Ich habe Erfahrung in über 12 Projekten gesammelt und dabei mit JavaScript, TypeScript und Angular gearbeitet. Ich beherrsche Git für die Versionskontrolle und habe Firebase für Backend-Dienste genutzt. Mit jedem Projekt habe ich meine Problemlösungsfähigkeiten verbessert und mein Wissen über moderne Webentwicklung vertieft."
+    },
+    "DEVELOPMENT": {
+      "TITLE": "ENTWICKLUNG",
+      "DESCRIPTION": "Mein Programmierstil ist durch Effizienz, Innovation und Anpassungsfähigkeit geprägt. Ich entwickle saubere, skalierbare Lösungen, die moderne Best Practices nahtlos integrieren und gleichzeitig Performance und Wartbarkeit priorisieren. Jedes Projekt wird mit einem Mobile-First-Ansatz entworfen, um eine reibungslose Benutzererfahrung auf allen Geräten zu gewährleisten."
+    },
+    "REMOTE": {
+      "TITLE": "REMOTE",
+      "DESCRIPTION": "Ich bin vollständig an das Arbeiten aus der Ferne gewöhnt und nutze moderne Technologien, um von überall aus nahtlos zusammenzuarbeiten. Mit den richtigen Tools und Workflows ist effizientes Arbeiten und die Vernetzung mit Teams über verschiedene Standorte hinweg für mich selbstverständlich."
+    }
+  },
+  "SKILLS": {
+    "TITLE": "TECHNOLOGIEN",
+    "USING_NOW": "AKTUELL VERWENDET:",
+    "LEARNING": "LERNE AKTUELL:",
+    "SEARCH_SKILLS": "Ich lerne gerne dazu und erweitere kontinuierlich meine Fähigkeiten, indem ich mich schnell an neue Technologien und Herausforderungen anpasse.\nIch halte mich über aktuelle Trends und Best Practices in der Webentwicklung auf dem Laufenden und optimiere ständig meine Herangehensweise.\nJede Herausforderung ist eine Chance zur Weiterentwicklung.\nWenn Sie einen engagierten Entwickler suchen, der bereit ist, neue Herausforderungen anzunehmen, kontaktieren Sie mich gerne!",
+    "CONTACT_ME": "KONTAKTIERE MICH!",
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "JAVASCRIPT": "JAVASCRIPT",
+    "TYPESCRIPT": "TYPESCRIPT",
+    "ANGULAR": "ANGULAR",
+    "FIREBASE": "FIREBASE",
+    "GIT": "GIT",
+    "REST_API": "REST-API",
+    "SCRUM": "SCRUM",
+    "MATERIAL": "MATERIAL",
+    "PYTHON": "PYTHON",
+    "DJANGO": "DJANGO"
+  },
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "JOIN": {
+      "DESCRIPTION1": "Join ist eine ausgeklügelte Aufgabenverwaltungs-App, die von Kanban-Boards inspiriert wurde. Sie wurde in enger Zusammenarbeit mit zwei anderen Entwicklern entwickelt und hilft Teams, ihre Aufgaben effizient zu organisieren.",
+      "DESCRIPTION2": "Mit Drag-and-Drop-Funktionalität, flexiblen Kategorien und einer intuitiven Benutzeroberfläche bietet Join einen nahtlosen und effizienten Arbeitsablauf. Die App ist mit Firebase für die Echtzeit-Datenhaltung optimiert und vollständig responsiv für Desktop- und Mobilgeräte gestaltet.",
+      "DESCRIPTION3": "Der Entwicklungsprozess war sowohl technisch als auch organisatorisch herausfordernd, aber er bot wertvolle Einblicke in Teamarbeit, UX-Design und skalierbare Architektur."
+    },
+    "HOGWARTS_API": {
+      "DESCRIPTION1": "Die Hogwarts API wurde verwendet, um eine dynamische Website zu erstellen, die Daten über Charaktere, Häuser und Zaubersprüche aus der Welt von Harry Potter anzeigt.",
+      "DESCRIPTION2": "Durch die Nutzung von RESTful API-Anfragen ruft die Website strukturierte Informationen ab und präsentiert sie auf eine interaktive und ansprechende Weise. Benutzer können verschiedene Aspekte des Harry-Potter-Universums mit einem klaren und responsiven Design erkunden.",
+      "DESCRIPTION3": "Die Entwicklung konzentrierte sich auf eine nahtlose API-Integration, effiziente Datenverarbeitung und eine benutzerfreundliche Erfahrung, was das Projekt sowohl technisch als auch kreativ lohnend machte."
+    },
+    "EL_POLLO_LOCO": {
+      "DESCRIPTION1": "El Pollo Loco ist ein unterhaltsames 2D-Jump-and-Run-Spiel, bei dem der Spieler Hühner ausweichen und gefährliche Feinde besiegen muss.",
+      "DESCRIPTION2": "Das Spiel wurde mit nativen JavaScript-Canvas-Elementen entwickelt und folgt einem objektorientierten Programmieransatz (OOP), um sauberen und modularen Code zu gewährleisten.",
+      "DESCRIPTION3": "Mit flüssigen Animationen, reaktionsschnellen Steuerungen und fesselnden Mechaniken bietet El Pollo Loco ein immersives Spielerlebnis und zeigt die Leistungsfähigkeit von OOP in der Spieleentwicklung."
+    },
+    "TECHNOLOGIES": "Technologien:",
+    "DEMO": "DEMO",
+    "GITHUB": "GITHUB",
+    "MORE": "Und viele weitere kommen noch!"
+  },
+  "RECOMMANDINGS": {
+    "TITLE": "EMPFEHLUNGEN",
+    "SUBTITLE": "Was meine Kollegen über mich sagen:",
+    "REC1": {
+      "TEXT": "Maik hatte durchweg einen positiven Einfluss auf unser Projekt. Er hat das Team mit Engagement geführt, konstruktive Lösungen vorgeschlagen und auch unter Druck die Übersicht behalten. Seine Problemlösungskompetenz, klare Kommunikation und motivierende Art haben das Teamwork gestärkt und die Zusammenarbeit angenehm gemacht."
+    },
+    "REC2": {
+      "TEXT": "Maik Joe ist ein wertvolles Teammitglied mit technischer Expertise und einer ausgeprägten Teamfähigkeit. Er bringt hilfreiche Ideen ein, geht Herausforderungen mit einem lösungsorientierten Ansatz an und ist stets verlässlich. Sein Engagement macht ihn zu einer großen Bereicherung, und ich würde jederzeit wieder mit ihm arbeiten."
+    },
+    "REC3": {
+      "TEXT": "Dank eines ausgeprägten Problemlösungsdenkens und seines Anspruchs an sauberen, effizienten Code ist Maik ein äußerst kompetenter Entwickler. Er passt sich schnell an neue Technologien an und liefert durchweg hochwertige Ergebnisse. Seine starke Kommunikation und Teamfähigkeit machen die Zusammenarbeit unkompliziert und produktiv."
+    }
+  },
+  "CONTACT_FORM": {
+    "TITLE": "KONTAKT",
+    "SUBTITLE": "Sind Sie an meiner Arbeit interessiert oder suchen Sie ein neues Teammitglied? Schreiben Sie mir gerne – ich freue mich über jede Anfrage und gebe gerne weitere Informationen!",
+    
+    "PLACEHOLDERS": {
+      "NAME": "Gib deinen Namen ein...",
+      "EMAIL": "Gib deine E-Mail ein...",
+      "PHONE": "Gib deine Telefonnummer ein...",
+      "MESSAGE": "Schreibe etwas..."
+    },
+
+    "ACCEPT_PRIVACY": "Ich akzeptiere die",
+    "PRIVACY_LINK": "Datenschutzbestimmungen",
+
+    "SUBMIT": "ABSENDEN",
+    "SUCCESS": "Vielen Dank! Deine Nachricht wurde erfolgreich versendet.",
+    
+    "ERRORS": {
+      "NAME_INVALID": "Name ungültig!",
+      "EMAIL_INVALID": "E-Mail ungültig!",
+      "MESSAGE_INVALID": "Nachricht ungültig!",
+      "PRIVACY_POLICY": "Du musst die Datenschutzbestimmungen akzeptieren!"
+    }
+  },
+  "FOOTER": {
+    "LEGAL_NOTICE": "Rechtliche Hinweise"
+  }
+}

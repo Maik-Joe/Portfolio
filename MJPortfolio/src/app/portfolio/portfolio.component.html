@@ -1,41 +1,64 @@
 <div id="portfolio" class="section5">
-    <div class="portfolio">
-      <div class="portfolio-banner">
-        <p>P O R T F O L I O</p>
-        <span>eatsome.</span>
-      </div>
-      <div class="portfolio-projects">
-        <p *ngFor="let project of projects" (click)="selectProject(project)" 
-           [class.active]="selectedProject.name === project.name">
-          {{ project.name }}
-        </p>
-      </div>
-      <div class="portfolio-projects-wrapper">
-        <div class="portfolio-projects-inline">
-          <div class="portfolio-description" [innerHTML]="selectedProject.description"></div>
-          <div class="portfolio-image-section">
-            <div class="technologies">
-              <div class="technologies-headline">
-                <p>Technologies:</p>
-              </div>
-              <div class="technologies-icons">
-                <img *ngFor="let tech of selectedProject.technologies" 
-                     [src]="'../../../assets/icons/' + tech">
-              </div>
+  <div class="portfolio">
+
+    <div class="portfolio-banner">
+      <p>{{ 'PORTFOLIO.TITLE' | translate }}</p>
+      <span>eatsome.</span>
+    </div>
+
+    <div class="portfolio-projects">
+      <p
+        *ngFor="let project of projects"
+        (click)="selectProject(project)"
+        [class.active]="selectedProject === project"
+      >
+        {{ project.name }}
+      </p>
+    </div>
+
+    <div class="portfolio-projects-wrapper">
+      <div class="portfolio-projects-inline">
+
+        <div class="portfolio-description">
+          <p
+            *ngFor="let descKey of selectedProject.descriptionKeys"
+            style="white-space: pre-line;"
+          >
+            {{ descKey | translate }}
+          </p>
+        </div>
+
+        <div class="portfolio-image-section">
+          <div class="technologies">
+            <div class="technologies-headline">
+              <p>{{ 'PORTFOLIO.TECHNOLOGIES' | translate }}</p>
             </div>
-            <div class="portfolio-image">
-              <img [src]="selectedProject.image">
-            </div>
-            <div class="portfolio-projects-links">
-              <a [href]="selectedProject.demoLink" target="_blank">DEMO</a> |
-              <a [href]="selectedProject.githubLink" target="_blank">GITHUB</a>
+            <div class="technologies-icons">
+              <img
+                *ngFor="let tech of selectedProject.technologies"
+                [src]="'../../../assets/icons/' + tech"
+              />
             </div>
           </div>
+          <div class="portfolio-image">
+            <img [src]="selectedProject.image" />
+          </div>
+          <div class="portfolio-projects-links">
+            <a [href]="selectedProject.demoLink" target="_blank">
+              {{ 'PORTFOLIO.DEMO' | translate }}
+            </a>
+            |
+            <a [href]="selectedProject.githubLink" target="_blank">
+              {{ 'PORTFOLIO.GITHUB' | translate }}
+            </a>
+          </div>
         </div>
-    </div>
-      <div class="more">
-        <p>And many more to come!</p>
+
       </div>
     </div>
+    <div class="more">
+      <p>{{ 'PORTFOLIO.MORE' | translate }}</p>
+    </div>
+
   </div>
-  
+</div>

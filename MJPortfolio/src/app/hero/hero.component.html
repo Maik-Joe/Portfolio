@@ -1,11 +1,11 @@
 <div id="hero" class="hero">
     <div class="section1">
         <div class="welcome">
-            <p>Hi, I am</p>
+            <p>{{ 'HERO.HI' | translate }}</p>
             <br>
-            <h2>Maik Joe</h2>
+            <h2>{{ 'HERO.NAME' | translate }}</h2>
             <br>
-            <h3>Frontend Developer</h3>
+            <h3>{{ 'HERO.JOB_TITLE' | translate }}</h3>
             <img src="./../../../assets/img/signature_BLACK.png">
         </div>
         <div class="icons">
@@ -18,16 +18,11 @@
         <img src="./../../../assets/img/MaikPortfolio.png">
     </div>
 </div>
+
 <div class="section-info">
     <div class="info-description">
-   <h4>YOUR VISION / MY CODE / OUR WOLRD</h4>
-   <br>
-   <p>The future of coding is a canvas for limitless innovation, driving solutions that transform the way we live and
-    connect. Technology empowers us to bridge gaps, automate the mundane, and create experiences that feel seamless
-    yet extraordinary. From artificial intelligence revolutionizing industries to sustainable tech reshaping the
-    environment, every line of code contributes to a smarter, more inclusive world. As we push boundaries and
-    redefine what’s possible, our collective vision becomes the foundation for breakthroughs that impact generations
-    to come. Together, we code not just for today, but for the world we aspire to build.</p>
-</div>
-
+        <h4>{{ 'HERO.TAGLINE' | translate }}</h4>
+        <br>
+        <p>{{ 'HERO.DESCRIPTION' | translate }}</p>
+    </div>
 </div>

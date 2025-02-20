@@ -1,36 +1,36 @@
 <div id="skills" class="section4">
     <div class="skills">
         <div class="skills-info">
-            <p>S K I L L S</p>
+            <p>{{ 'SKILLS.TITLE' | translate }}</p>
             <div class="skills-now">
                 <div class="skills-now-container">
-                    <h3>USING NOW:</h3>
+                    <h3>{{ 'SKILLS.USING_NOW' | translate }}</h3>
                     <div class="skills-now-container-small">
                         @for(item of SkilltreeNow; track item.name) {
                         <div class="skilltree-icons">
                             <img src="./../../../assets/icons/{{item.img}}" alt="" srcset="">
-                            <p>{{item.name}}</p>
+                            <p>{{ item.name | translate }}</p>  <!-- ✅ Übersetzung -->
                         </div>
                         }
                     </div>
                 </div>
                 <div class="skills-now-container">
-                    <h3>LEARNING:</h3>
+                    <h3>{{ 'SKILLS.LEARNING' | translate }}</h3>
                     <div class="skills-now-container-small">
                         @for(item of SkilltreeLearning; track item.name) {
                         <div class="skilltree-icons">
                             <img src="./../../../assets/icons/{{item.img}}" alt="" srcset="">
-                            <p>{{item.name}}</p>
+                            <p>{{ item.name | translate }}</p>  <!-- ✅ Übersetzung -->
                         </div>
                         }
                     </div>
                 </div>
                 <div class="search-skills">
-                    <p>I am always eager to learn and expand my skill set, adapting quickly to new technologies and
-                        challenges. No matter the requirements, I am ready to dive in, grow, and contribute effectively.
-                        If you're looking for a dedicated and adaptable developer, feel free to reach out!.</p>
-                        <a href="#contactMe">CONTACT ME!</a>
+                    <p>{{ 'SKILLS.SEARCH_SKILLS' | translate }}</p>
+                    <a href="#contactMe">{{ 'SKILLS.CONTACT_ME' | translate }}</a>
                 </div>
             </div>
             <div class="seperator"><img src="./../../../assets/icons/separatorBlack 1.png"></div>
         </div>
+    </div>
+</div>

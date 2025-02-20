@@ -1,67 +1,107 @@
 <div id="contactMe" class="section7">
     <div class="contact">
-        <div class="contact-headline">
-            <p>C O N T A C T</p>
-            <span>Are you interested in my work or looking for a new teammate? Feel free to reach out to me—I’m happy to
-                receive all kinds of inquiries and would be glad to provide further information!</span>
-        </div>
-        <div class="contact-form-container">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <div class="contact-headline">
+        <p>{{ 'CONTACT_FORM.TITLE' | translate }}</p>
+        <span>{{ 'CONTACT_FORM.SUBTITLE' | translate }}</span>
+      </div>
+  
+      <div class="contact-form-container">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  
+          <input
+            #name="ngModel"
+            [(ngModel)]="contactData.name"
+            type="text"
+            id="name"
+            name="name"
+            [placeholder]="('CONTACT_FORM.PLACEHOLDERS.NAME' | translate)"
+            required
+          />
+          <div class="invalid">
+            @if (!name.valid && name.touched) {
+              <span>{{ 'CONTACT_FORM.ERRORS.NAME_INVALID' | translate }}</span>
+            }
+          </div>
 
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="Enter your name..." required>
-                <div class="invalid">
-                    @if (!name.valid && name.touched) {
-                    <span>Name invalid!</span>
-                    }
-                </div>
+          <input
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            type="email"
+            id="email"
+            name="email"
+            [placeholder]="('CONTACT_FORM.PLACEHOLDERS.EMAIL' | translate)"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          <div class="invalid">
+            @if (!email.valid && email.touched) {
+              <span>{{ 'CONTACT_FORM.ERRORS.EMAIL_INVALID' | translate }}</span>
+            }
+          </div>
+  
+          <input
+            [(ngModel)]="contactData.phone"
+            type="text"
+            id="phone"
+            name="phone"
+            [placeholder]="('CONTACT_FORM.PLACEHOLDERS.PHONE' | translate)"
+          />
+          <div class="invalid"></div>
+  
+          <textarea
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            id="message"
+            name="message"
+            [placeholder]="('CONTACT_FORM.PLACEHOLDERS.MESSAGE' | translate)"
+            style="height:200px"
+            required
+          ></textarea>
+          <div class="invalid">
+            @if (!message.valid && message.touched) {
+              <span>{{ 'CONTACT_FORM.ERRORS.MESSAGE_INVALID' | translate }}</span>
+            }
+          </div>
 
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Enter your email..." required
-                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                <div class="invalid">
-                    @if (!email.valid && email.touched) {
-                    <span>Email invalid!</span>
-                    }
-                </div>
-
-                <input [(ngModel)]="contactData.phone" type="phone" id="phone" name="phone"
-                    placeholder="Enter your phone number...">
-                <div class="invalid"></div>
-
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
-                    placeholder="Write something.." style="height:200px" required></textarea>
-                <div class="invalid">
-                    @if (!message.valid && message.touched) {
-                    <span>Message invalid!</span>
-                    }
-                </div>
-
-                <div class="check-privacy">
-                    <input #privacyCheck="ngModel" [(ngModel)]="contactData.privacyAccepted" type="checkbox"
-                        id="privacyCheck" name="privacyCheck" required>
-                    <label for="privacyCheck"></label>
-                    <span>I accept the <a href="#">Privacy Policy</a></span>
-                </div>
-                <div class="invalid">
-                    @if (!privacyCheck.valid && privacyCheck.touched) {
-                    <span>You must accept the Privacy Policy!</span>
-                    }
-                </div>
-
-                <!-- Submit Button -->
-                <div class="submit_btn">
-                    <button type="submit" value="Submit" [disabled]="!contactForm.valid || !isFormValid()">SUBMIT</button>
-                </div>
-
-
-                <div class="success-message">
-                    @if (formSubmitted) {
-                    <span>Thank you! Your message has been sent successfully.</span>
-                    }
-                </div>
-
-            </form>
-        </div>
+          <div class="check-privacy">
+            <input
+              #privacyCheck="ngModel"
+              [(ngModel)]="contactData.privacyAccepted"
+              type="checkbox"
+              id="privacyCheck"
+              name="privacyCheck"
+              required
+            />
+            <label for="privacyCheck"></label>
+            <span>
+              {{ 'CONTACT_FORM.ACCEPT_PRIVACY' | translate }}
+              <a href="#">{{ 'CONTACT_FORM.PRIVACY_LINK' | translate }}</a>
+            </span>
+          </div>
+          <div class="invalid">
+            @if (!privacyCheck.valid && privacyCheck.touched) {
+              <span>{{ 'CONTACT_FORM.ERRORS.PRIVACY_POLICY' | translate }}</span>
+            }
+          </div>
+  
+          <div class="submit_btn">
+            <button
+              type="submit"
+              value="Submit"
+              [disabled]="!contactForm.valid || !isFormValid()"
+            >
+              {{ 'CONTACT_FORM.SUBMIT' | translate }}
+            </button>
+          </div>
+  
+          <div class="success-message">
+            @if (formSubmitted) {
+              <span>{{ 'CONTACT_FORM.SUCCESS' | translate }}</span>
+            }
+          </div>
+  
+        </form>
+      </div>
     </div>
-</div>
+  </div>
+  
