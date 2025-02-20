@@ -114,9 +114,11 @@ h4 {
 }
 
 .info-description {
-    font-family: "OpenSans";
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 32px;
+    >p{
+        font-family: "OpenSans";
+    }
 }
 
 @keyframes typing {

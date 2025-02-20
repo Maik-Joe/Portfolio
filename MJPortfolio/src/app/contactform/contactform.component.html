@@ -10,31 +10,58 @@
 
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
                     placeholder="Enter your name..." required>
-                @if (!name.valid && name.touched) {
-                <div><span>Name invalid!</span></div>
-                }
+                <div class="invalid">
+                    @if (!name.valid && name.touched) {
+                    <span>Name invalid!</span>
+                    }
+                </div>
 
-                <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                     placeholder="Enter your email..." required
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                @if (!message.valid && message.touched) {
-                <div><span>Email invalid!</span></div>
-                }
+                <div class="invalid">
+                    @if (!email.valid && email.touched) {
+                    <span>Email invalid!</span>
+                    }
+                </div>
 
                 <input [(ngModel)]="contactData.phone" type="phone" id="phone" name="phone"
                     placeholder="Enter your phone number...">
+                <div class="invalid"></div>
 
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
                     placeholder="Write something.." style="height:200px" required></textarea>
-                @if (!message.valid && message.touched) {
-                <div><span>Message invalid!</span></div>
-                }
-                
-                <div class="submit_btn">
-                    <button type="submit" value="Submit">SUBMIT</button>
+                <div class="invalid">
+                    @if (!message.valid && message.touched) {
+                    <span>Message invalid!</span>
+                    }
                 </div>
+
+                <div class="check-privacy">
+                    <input #privacyCheck="ngModel" [(ngModel)]="contactData.privacyAccepted" type="checkbox"
+                        id="privacyCheck" name="privacyCheck" required>
+                    <label for="privacyCheck"></label>
+                    <span>I accept the <a href="#">Privacy Policy</a></span>
+                </div>
+                <div class="invalid">
+                    @if (!privacyCheck.valid && privacyCheck.touched) {
+                    <span>You must accept the Privacy Policy!</span>
+                    }
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit_btn">
+                    <button type="submit" value="Submit" [disabled]="!contactForm.valid || !isFormValid()">SUBMIT</button>
+                </div>
+
+
+                <div class="success-message">
+                    @if (formSubmitted) {
+                    <span>Thank you! Your message has been sent successfully.</span>
+                    }
+                </div>
+
             </form>
         </div>
     </div>
 </div>
-<div class="seperator"><img src="./../../../assets/icons/separatorBlack 1.png"></div>
