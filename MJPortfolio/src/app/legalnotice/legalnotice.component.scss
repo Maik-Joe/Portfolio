@@ -1,0 +1,30 @@
+.legalnotice{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(215,215,215);
+    height: fit-content;
+
+    .legalnotice-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1440px;
+        width: 100%;
+        background: linear-gradient(-80deg, black 80%, rgb(215, 215, 215) 20%);
+    }
+
+    .legalnotice-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        max-width: 800px;
+        color: white;
+        margin: 80px 0 ;
+        padding-top: 80px;
+        text-align: center;
+    }
+}

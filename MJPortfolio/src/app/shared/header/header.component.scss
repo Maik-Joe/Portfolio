@@ -7,18 +7,6 @@ header {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    padding: 8px;
-    border-radius: 20px;
-    &:hover {
-        background-color: rgb(255, 255, 255);
-        color: black;
-        transition: 0.2s ease-in-out;
-    }
-}
-
 .header-content {
     display: flex;
     align-items: center;
@@ -28,7 +16,7 @@ a {
     margin: 0 10px;
 }
 
-.icon {
+.icon a {
     > img {
         width: 80px;
         height: auto;
@@ -45,6 +33,17 @@ a {
     justify-content: space-evenly;
     max-width: 600px;
     width: 100%;
+    >a {
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+        border-radius: 20px;
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            transition: 0.2s ease-in-out;
+        }
+    }
 }
 
 .language {
