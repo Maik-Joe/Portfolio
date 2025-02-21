@@ -133,7 +133,8 @@
         text-align: center;
         gap: 8px;
         font-family: "Montserrat";
-        padding: 20px;
+        padding: 20px 0;
+        font-weight: bold;
 
         .technologies-icons {
             >img {
@@ -162,6 +163,16 @@
 }
 
 @media (max-width:849px) {
+
+    .portfolio-banner {
+        >p {
+            font-size: 48px !important;
+        }
+        >span {
+            font-size: 24px !important;
+        }
+
+    }
 
     .portfolio-image {
         >img {

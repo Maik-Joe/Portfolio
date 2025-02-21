@@ -23,10 +23,6 @@ header {
         transition: transform 0.5s ease;
         cursor: pointer;
         padding-left: 40px;
-        
-        &:hover {
-            transform: rotate(90deg);
-        }
     }
 }
 
@@ -139,7 +135,7 @@ header {
     header {
         position: fixed;
         top: 0;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
     }
 
     .burger-menu {

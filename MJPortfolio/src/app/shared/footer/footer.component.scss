@@ -4,7 +4,7 @@ footer {
     align-items: center;
     width: 100%;
     width: 100%;
-    background-color: rgb(26, 26, 26);
+    background-color: black;
 
     .footer-content {
         display: flex;
@@ -17,7 +17,7 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 16px;
         padding: 32px;
         color: white;
         font-family: "OpenSans";
@@ -62,8 +62,15 @@ footer {
         }
     }
 
-    a {
+    a { 
         text-decoration: none;
         color: white;
+    }
+}
+
+@media (max-width:849px) {
+
+    a {
+        font-size: 14px;
     }
 }

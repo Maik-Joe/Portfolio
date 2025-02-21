@@ -21,10 +21,23 @@
         flex-direction: column;
         gap: 16px;
         width: 100%;
-        max-width: 800px;
+        max-width: 500px;
         color: white;
         margin: 80px 0 ;
         padding-top: 80px;
         text-align: center;
+    }
+}
+
+@media (max-width: 1099px) {
+    
+     .legalnotice-wrapper {
+        background: unset !important;
+        background-color: rgb(215, 215, 215)!important;
+    }
+
+    .legalnotice-content {
+        color: black !important;
+        padding: 0 40px;
     }
 }

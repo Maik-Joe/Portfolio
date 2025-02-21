@@ -104,7 +104,7 @@
     background-position: right;
     background-size: contain;
     max-width: 1440px;
-    color: white; 
+    color: white;
 }
 
 h4 {
@@ -194,6 +194,15 @@ h4 {
     .hero {
         background: black;
         height: 100vh;
+    }
+
+    .section-info {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .info-description {
+        padding: 20px 40px;
     }
     
     .section1 {
