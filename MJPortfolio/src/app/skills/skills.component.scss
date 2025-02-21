@@ -100,3 +100,46 @@ a {
         font-family: "OpenSans";
     }
 }
+
+@media (max-width:849px) {
+ 
+    .skills-info{
+        >p {
+            font-size: 32px !important;
+        }
+    }
+
+    .skills-now {
+        h3 {
+            font-size: 20px;
+        }
+        text-align: center;
+    }
+
+    .skills-now-container-small {
+        justify-content: center;
+    }
+
+    .skilltree-icons{
+        >img {
+            width: 72px;
+            height: 72px;
+        }
+        >p {
+            font-size: 14px;
+        }
+    }
+
+    .search-skills {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 349px) {
+
+    .skills-info {
+        >p {
+            font-size: 24px !important;
+        }
+    }
+}

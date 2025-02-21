@@ -74,14 +74,24 @@
             background-color: rgb(215, 215, 215);
         }
 
-        .portfolio-description,
         .portfolio-image-section {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 100%;
-            padding: 10px 40px;
+            padding: 0 40px;
+            font-family: "OpenSans";
+            font-weight: 500;
+            gap:16px;
+        }
+
+        .portfolio-description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 40px;
+            padding-bottom: 40px;
             font-family: "OpenSans";
             font-weight: 500;
             gap:16px;
@@ -89,8 +99,8 @@
 
         .portfolio-image {
             >img {
-                width: 500px;
-                height: 300px;
+                width: 600px;
+                height: 400px;
                 object-fit: cover;
                 border-radius: 5px;
                 border: solid 3px black;
@@ -143,3 +153,56 @@
     }
 
 }
+
+@media (max-width:1099px) {
+
+    .portfolio-projects-inline {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:849px) {
+
+    .portfolio-image {
+        >img {
+            width: 100% !important;
+            height: 200px !important;
+        }
+    }
+
+    .portfolio-description{
+        >p {
+            font-size: 14px;
+        }
+    }
+
+    .portfolio-projects{
+        justify-content: center;
+        >p {
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media (max-width:549px) {
+
+    .portfolio-projects-inline {
+        margin: unset !important;
+    }
+
+    .portfolio-projects{
+        margin-left: unset !important;
+    }
+}
+
+@media (max-width:414px) {
+
+    .portfolio-projects{
+        text-align: center;
+        gap: 20px !important;
+        >p {
+            font-size: 16px !important;
+        }
+    }
+}
+

@@ -20,9 +20,9 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    width: 100%;
     max-width: 1120px;
     text-align: center;
+    margin: 0 40px;
 
     >p {
         font-size: 40px;
@@ -124,6 +124,60 @@
             top: 50px;
             left: -40px;
 
+        }
+    }
+}
+
+@media (max-width:1249px) {
+
+    .abilities{
+        width: 80%;
+    }
+}
+
+@media (max-width:849px) {
+
+    .abilities{
+        width: unset;
+    }
+
+    .wrapper1, .wrapper3, .wrapper2 {
+        justify-content: center !important;
+        padding: unset !important;
+    }
+
+    .projects, .development, .remote {
+        text-align: center;
+        padding: 30px 20px;
+        >img {
+            position: unset !important;
+        }
+    }
+    
+    .line {
+        left: unset !important;
+        right: unset !important;
+      
+    }
+
+    .projects {
+        >img{
+            left: 32px !important;
+        }
+    }
+
+    .aboutMe-info {
+        >p {
+            font-size: 32px !important;
+        }
+    }
+}
+
+@media (max-width: 349px) {
+
+    .aboutMe-info {
+        >p {
+            font-size: 24px !important;
         }
     }
 }

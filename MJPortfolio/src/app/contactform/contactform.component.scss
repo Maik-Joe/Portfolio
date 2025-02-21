@@ -18,6 +18,7 @@
         flex-direction: column;
         text-align: center;
         gap: 16px;
+        margin: 0 40px;
 
         >p {
             font-size: 40px;
@@ -171,4 +172,31 @@
         transition: opacity 0.3s ease-in-out;
     }
 
+}
+
+@media (max-width:849px) {
+
+    .contact-headline {
+        >p {
+            font-size: 32px !important;
+        }
+    }
+
+    input, textarea {
+        font-size: 14px !important;
+        padding: 5px !important;
+    }
+
+    form {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 349px) {
+
+    .contact-headline{
+        >p {
+            font-size: 24px !important;
+        }
+    }
 }

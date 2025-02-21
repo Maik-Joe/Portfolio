@@ -16,7 +16,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
     width: 100%;
 }
 
@@ -63,12 +62,14 @@
 .section2 {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    width: 100%;
     @include widthHeight();
 
     >img {
-        width: auto;
+        max-width: 500px;
         height: 700px;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
@@ -103,8 +104,7 @@
     background-position: right;
     background-size: contain;
     max-width: 1440px;
-    color: white;
-   
+    color: white; 
 }
 
 h4 {
@@ -115,7 +115,7 @@ h4 {
 
 .info-description {
     max-width: 1100px;
-    padding: 32px;
+    padding: 40px;
     >p{
         font-family: "OpenSans";
     }
@@ -142,3 +142,109 @@ h4 {
         transform: translateX(0);
     }
 }
+
+@media (max-width:1249px) {
+
+    .section1 {
+        width: 80%;
+    }
+}
+
+@media (max-width:849px) {
+
+
+    .hero {
+        height: 80vh;
+        background: linear-gradient(-80deg, black 50%, rgb(215, 215, 215) 50%);
+    }
+
+    .icons {
+        margin-top: unset;
+    }
+
+    .welcome {
+        >p {
+            font-size: 32px !important;
+        }
+        >h2 {
+            font-size: 48px
+        }
+
+    }
+
+    .info-description {
+        text-align: center;
+        >h4 {
+            font-size: 20px;
+        }
+    }
+
+    .section2 {
+        >img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+@media (max-width:679px) {
+
+    .hero {
+        background: black;
+        height: 100vh;
+    }
+    
+    .section1 {
+        align-items: baseline;
+        justify-content: unset;
+        flex-direction: unset;
+        gap: 40px;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(-10deg, black 29.9%, rgb(215, 215, 215) 30%);
+
+
+        .welcome {
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+    }
+
+    .section2 {
+        justify-content: center;
+        >img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60vh;
+        }
+    }
+    
+
+    .icons {
+        flex-direction: column;
+        width: unset;
+    }
+}
+
+@media (max-width: 349px) {
+
+    .section1 {
+        gap: 10px;
+    }
+
+    .welcome {
+        >p {
+            font-size: 24px !important;
+        }
+        >h2{
+            font-size: 32px !important;
+        }
+    }
+}
+
+

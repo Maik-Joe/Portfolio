@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: fit-content;
 
     .recommandings {
         display: flex;
@@ -15,7 +16,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 40px;
     }
 
     .recommandings-title {
@@ -24,13 +24,13 @@
         gap: 16px;
         text-align: center;
 
-        > p {
+        >p {
             font-size: 40px;
             font-family: "Montserrat";
             font-weight: bold;
         }
 
-        > span {
+        >span {
             font-family: "OpenSans";
         }
     }
@@ -64,7 +64,7 @@
             color: black;
         }
 
-        > img {
+        >img {
             display: none;
             position: absolute;
             width: 48px;
@@ -73,8 +73,8 @@
             z-index: 8;
         }
 
-        &:hover > img,
-        &.active > img {
+        &:hover>img,
+        &.active>img {
             display: block;
         }
     }
@@ -91,20 +91,20 @@
         transform: translateY(40px);
     }
 
-    .recommandings-box:nth-child(1):hover > img,
-    .recommandings-box:nth-child(1).active > img {
+    .recommandings-box:nth-child(1):hover>img,
+    .recommandings-box:nth-child(1).active>img {
         top: -20px;
         left: -20px;
     }
 
-    .recommandings-box:nth-child(2):hover > img,
-    .recommandings-box:nth-child(2).active > img {
+    .recommandings-box:nth-child(2):hover>img,
+    .recommandings-box:nth-child(2).active>img {
         top: -15px;
         left: -25px;
     }
 
-    .recommandings-box:nth-child(3):hover > img,
-    .recommandings-box:nth-child(3).active > img {
+    .recommandings-box:nth-child(3):hover>img,
+    .recommandings-box:nth-child(3).active>img {
         top: -10px;
         left: -20px;
     }
@@ -116,8 +116,53 @@
         padding: 5px;
         gap: 16px;
 
-        > span {
+        >span {
             font-family: "OpenSans";
         }
     }
 }
+
+@media (max-width: 849px) {
+
+    span{
+        font-size: 14px !important;
+    }
+
+    .recommandings-title {
+        >p {
+            font-size: 32px !important;
+        }
+        >span {
+            margin-bottom: 80px;
+        }
+    }
+
+    .recommandings-container {
+        flex-direction: column;
+    } 
+
+    .recommandings-box {
+        margin-left: unset !important;
+        margin-top: unset !important;
+        margin-bottom: -150px !important;
+    }
+
+    .section6 {
+        margin-bottom: 180px;
+    }
+}
+
+
+@media (max-width: 349px) {
+
+    .recommandings-title {
+        >p {
+            font-size: 24px !important;
+        }
+    }
+
+    .recommandings-box {
+        width: 200px !important;
+    }
+}
+

@@ -3,8 +3,9 @@ header {
     justify-content: center;
     position: absolute;
     width: 100%;
-    padding: 32px 0;
+    padding: 16px 0;
     font-weight: bold;
+    z-index: 999;
 }
 
 .header-content {
@@ -12,8 +13,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1120px;
-    margin: 0 10px;
+    max-width: 1440px;
 }
 
 .icon a {
@@ -22,8 +22,10 @@ header {
         height: auto;
         transition: transform 0.5s ease;
         cursor: pointer;
+        padding-left: 40px;
+        
         &:hover {
-            transform: rotate(90deg); 
+            transform: rotate(90deg);
         }
     }
 }
@@ -33,13 +35,15 @@ header {
     justify-content: space-evenly;
     max-width: 600px;
     width: 100%;
-    >a {
+
+    > a {
         text-decoration: none;
         color: white;
         padding: 8px;
         border-radius: 20px;
+
         &:hover {
-            background-color: rgb(255, 255, 255);
+            background-color: white;
             color: black;
             transition: 0.2s ease-in-out;
         }
@@ -49,17 +53,20 @@ header {
 .language {
     display: flex;
     gap: 8px;
-    margin-left: 40px;
+    margin: 0 40px;
     cursor: pointer;
-    >div {
+
+    > div {
         height: 34px;
         width: 1px;
         background-color: white;
     }
-    >img {
+
+    > img {
         width: 34px;
         height: auto;
         border-radius: 20px;
+
         &:hover {
             scale: 1.1;
             transition: 0.2s ease-in-out;
@@ -67,6 +74,75 @@ header {
     }
 }
 
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 24px;
 
+    div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transition: 0.3s ease-in-out;
+    }
+}
 
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: 999;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
+    >a {
+        text-decoration: none;
+        color: white;
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 8px;
+
+        &:hover {
+            background-color: white;
+            color: black;
+            transition: 0.2s ease-in-out;
+   
+        }
+    }
+}
+
+.mobile-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 1099px) {
+    .header-links {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        background-color: black;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}

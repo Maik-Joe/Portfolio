@@ -3,21 +3,40 @@
         <div class="icon">
             <a href="#hero"><img src="./../../../assets/icons/icononly_transparent_nobuffer.png"></a>
         </div>
-        <div class="header-links">
+        <nav class="header-links">
             <a href="#aboutMe">{{ 'HEADER.ABOUT_ME' | translate }}</a>
             <a href="#skills">{{ 'HEADER.SKILLS' | translate }}</a>
             <a href="#portfolio">{{ 'HEADER.PORTFOLIO' | translate }}</a>
             <a href="#contactMe">{{ 'HEADER.CONTACT_ME' | translate }}</a>
-            
+
             <div class="language">
-                <!-- Deutschland-Flagge -->
-                <img src="./../../../assets/icons/germany_11948652.png" 
-                     (click)="switchLanguage('de')" style="cursor: pointer;">
+                <img src="./../../../assets/icons/germany_11948652.png" (click)="switchLanguage('de')"
+                    style="cursor: pointer;">
                 <div></div>
-                <!-- UK-Flagge -->
-                <img src="./../../../assets/icons/united-kingdom_551844.png" 
-                     (click)="switchLanguage('en')" style="cursor: pointer;">
+                <img src="./../../../assets/icons/united-kingdom_551844.png" (click)="switchLanguage('en')"
+                    style="cursor: pointer;">
             </div>
+        </nav>
+        <div class="burger-menu" (click)="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
 </header>
+
+
+<nav class="mobile-menu" [ngClass]="{'open': isMenuOpen}" (click)="closeMenuOnOverlayClick($event)">
+    <a href="#aboutMe" (click)="closeMenu()">{{ 'HEADER.ABOUT_ME' | translate }}</a>
+    <a href="#skills" (click)="closeMenu()">{{ 'HEADER.SKILLS' | translate }}</a>
+    <a href="#portfolio" (click)="closeMenu()">{{ 'HEADER.PORTFOLIO' | translate }}</a>
+    <a href="#contactMe" (click)="closeMenu()">{{ 'HEADER.CONTACT_ME' | translate }}</a>
+
+    <div class="language">
+        <img src="./../../../assets/icons/germany_11948652.png" (click)="switchLanguage('de'); closeMenu()"
+            style="cursor: pointer;">
+        <div></div>
+        <img src="./../../../assets/icons/united-kingdom_551844.png" (click)="switchLanguage('en'); closeMenu()"
+            style="cursor: pointer;">
+    </div>
+</nav>
