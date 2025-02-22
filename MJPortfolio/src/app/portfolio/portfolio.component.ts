@@ -28,7 +28,7 @@ export class PortfolioComponent {
         'firebase.icon.png'
       ],
       demoLink: 'https://join-app-demo.com',
-      githubLink: 'https://github.com/your-repo/join'
+      githubLink: 'https://github.com/Maik-Joe/Join-.git'
     },
     {
       name: 'Hogwarts API', 
@@ -45,7 +45,7 @@ export class PortfolioComponent {
         'api.icon.png'
       ],
       demoLink: 'https://hogwarts-api-demo.com',
-      githubLink: 'https://github.com/your-repo/hogwarts-api'
+      githubLink: 'https://github.com/Maik-Joe/HogwartsAPI.git'
     },
     {
       name: 'EL pollo loco', 
@@ -61,7 +61,7 @@ export class PortfolioComponent {
         'js.icon.png'
       ],
       demoLink: 'https://el-pollo-loco-demo.com',
-      githubLink: 'https://github.com/your-repo/el-pollo-loco'
+      githubLink: 'https://github.com/Maik-Joe/El-pollo-loco.git'
     }
   ];
 
