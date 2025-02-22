@@ -17,11 +17,11 @@
     "DESCRIPTION": "Ich bin ein leidenschaftlicher Frontend-Entwickler aus der Nähe von Rosenheim und liebe es, innovative und kreative Lösungen zu entwickeln. Seit ich das Programmieren entdeckt habe, ist jedes Projekt ein neues Abenteuer, das mich herausfordert und inspiriert.\nMein Fokus liegt auf der Gestaltung moderner, benutzerfreundlicher und optisch ansprechender Webanwendungen. Ich arbeite gerne mit den neuesten Technologien und Trends, um einzigartige digitale Erlebnisse zu schaffen. Sauberer Code, Performance und eine durchdachte Benutzererfahrung sind wesentliche Aspekte meiner Arbeit.\nOb kreative Animationen, interaktive Interfaces oder maßgeschneiderte Lösungen – es begeistert mich immer, Ideen in funktionale und ästhetische Anwendungen zu verwandeln.",
     "PROJECTS": {
       "TITLE": "PROJEKTE",
-      "DESCRIPTION": "Ich habe Erfahrung in über 12 Projekten gesammelt und dabei mit JavaScript, TypeScript und Angular gearbeitet. Ich beherrsche Git für die Versionskontrolle und habe Firebase für Backend-Dienste genutzt. Mit jedem Projekt habe ich meine Problemlösungsfähigkeiten verbessert und mein Wissen über moderne Webentwicklung vertieft."
+      "DESCRIPTION": "Ich habe Erfahrung in über 12 Projekten gesammelt und dabei unter anderem mit HTML, CSS, JavaScript, TypeScript und Angular gearbeitet. Ich beherrsche Git für die Versionskontrolle und habe Firebase für Backend-Dienste genutzt. Mit jedem Projekt habe ich meine Problemlösungsfähigkeiten verbessert und mein Wissen über moderne Webentwicklung vertieft."
     },
     "DEVELOPMENT": {
       "TITLE": "ENTWICKLUNG",
-      "DESCRIPTION": "Mein Programmierstil ist durch Effizienz, Innovation und Anpassungsfähigkeit geprägt. Ich entwickle saubere, skalierbare Lösungen, die moderne Best Practices nahtlos integrieren und gleichzeitig Performance und Wartbarkeit priorisieren. Jedes Projekt wird mit einem Mobile-First-Ansatz entworfen, um eine reibungslose Benutzererfahrung auf allen Geräten zu gewährleisten."
+      "DESCRIPTION": "Mein Programmierstil ist geprägt von Effizienz, Innovation und Anpassungsfähigkeit. Ich entwickle saubere, skalierbare Lösungen, die moderne Best Practices nahtlos integrieren, wobei ich besonderen Wert auf Performance und Wartbarkeit lege. Durch meine Erfahrung mit der Scrum-Arbeitsweise bin ich es gewohnt, sowohl selbstständig als auch im Team zu arbeiten. Jedes Projekt setze ich mit einem Mobile-First-Ansatz um, um eine reibungslose Benutzererfahrung auf allen Geräten zu gewährleisten. Dabei konzentriere ich mich darauf, essenzielle Funktionen intuitiv zu implementieren und eine ausgewogene Kombination aus Funktionalität und eleganter Einfachheit zu schaffen."
     },
     "REMOTE": {
       "TITLE": "REMOTE",

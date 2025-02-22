@@ -19,6 +19,12 @@
     font-style: normal;
   }
 
+  @mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 *{ 
     margin: 0;
     font-family: 'Raleway';

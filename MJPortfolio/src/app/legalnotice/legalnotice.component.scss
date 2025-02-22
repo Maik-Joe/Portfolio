@@ -1,3 +1,5 @@
+@import "./../../styles.scss";
+
 .legalnotice{
     display: flex;
     justify-content: center;
@@ -6,18 +8,14 @@
     height: fit-content;
 
     .legalnotice-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         max-width: 1440px;
         width: 100%;
         background: linear-gradient(-80deg, black 80%, rgb(215, 215, 215) 20%);
     }
 
     .legalnotice-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         flex-direction: column;
         gap: 16px;
         width: 100%;

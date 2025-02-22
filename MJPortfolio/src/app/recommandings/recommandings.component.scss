@@ -1,3 +1,5 @@
+@import "./../../styles.scss";
+
 .section6 {
     display: flex;
     justify-content: center;
@@ -13,9 +15,7 @@
     }
 
     .recommandings-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
     }
 
     .recommandings-title {
@@ -31,9 +31,7 @@
 
     .recommandings-box {
         cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         width: 300px;
         height: 300px;
         margin-top: 80px;

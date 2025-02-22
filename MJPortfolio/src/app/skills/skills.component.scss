@@ -1,3 +1,5 @@
+@import "./../../styles.scss";
+
 .section4 {
     display: flex;
     justify-content: center;
@@ -15,10 +17,8 @@
     }
 
     .skills-info {
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         >h1 {
             font-size: 40px;
@@ -91,8 +91,8 @@ a {
 }
 
 @media (max-width:849px) {
- 
-    .skills-info{
+
+    .skills-info {
         >h1 {
             font-size: 32px !important;
         }
@@ -102,6 +102,7 @@ a {
         h3 {
             font-size: 20px;
         }
+
         text-align: center;
     }
 
@@ -109,7 +110,7 @@ a {
         justify-content: center;
     }
 
-    .skilltree-icons{
+    .skilltree-icons {
         >img {
             width: 72px;
             height: 72px;

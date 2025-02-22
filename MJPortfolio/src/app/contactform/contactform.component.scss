@@ -1,3 +1,5 @@
+@import "./../../styles.scss";
+
 .section7 {
     display: flex;
     justify-content: center;
@@ -27,9 +29,7 @@
 }
 
 .contact-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     form {
         display: flex;

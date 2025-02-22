@@ -1,3 +1,5 @@
+@import "./../../styles.scss";
+
 @mixin widthHeight () {
     width: 100%;
     height: 80vh;
@@ -12,10 +14,8 @@
 }
 
 .section1 {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
@@ -42,7 +42,7 @@
         animation: typing 1.5s steps(30, end) forwards;
     }
 
-    >h2{
+    >h2 {
         font-size: 42px;
         animation-delay: 0s;
     }
@@ -73,9 +73,7 @@
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: 32px;
     margin-top: 40px;
     width: 100%;
@@ -160,12 +158,14 @@ h4 {
     h2 {
         font-size: 32px !important;
     }
+
     h1 {
         font-size: 48px !important;
     }
 
     .info-description {
         text-align: center;
+
         >h4 {
             font-size: 20px;
         }
@@ -196,7 +196,7 @@ h4 {
     .info-description {
         padding: 20px 40px;
     }
-    
+
     .section1 {
         align-items: baseline;
         justify-content: unset;
@@ -217,6 +217,7 @@ h4 {
 
     .section2 {
         justify-content: center;
+
         >img {
             position: absolute;
             bottom: 0;
@@ -224,7 +225,7 @@ h4 {
             height: 60vh;
         }
     }
-    
+
 
     .icons {
         flex-direction: column;
@@ -241,9 +242,8 @@ h4 {
     >h2 {
         font-size: 24px !important;
     }
-    >h1{
+
+    >h1 {
         font-size: 32px !important;
     }
 }
-
-
