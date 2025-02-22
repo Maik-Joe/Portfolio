@@ -24,13 +24,8 @@
     text-align: center;
     margin: 0 40px;
 
-    >p {
+    >h1 {
         font-size: 40px;
-        font-weight: bold;
-        font-family: "Montserrat";
-    }
-    >span {
-        font-family: "OpenSans";
     }
 }
 
@@ -86,14 +81,8 @@
         max-width: 500px;
         z-index: 2;
 
-        >p {
+        >h5 {
             font-size: 20px;
-            font-weight: bold;
-            font-family: "Montserrat";
-        }
-
-        >span {
-            font-family: "OpenSans";
         }
 
         >img {
@@ -108,14 +97,8 @@
         max-width: 500px;
         z-index: 2;
 
-        >p {
+        >h5 {
             font-size: 20px;
-            font-weight: bold;
-            font-family: "Montserrat";
-        }
-
-        >span {
-               font-family: "OpenSans";
         }
 
         >img {
@@ -167,16 +150,21 @@
     }
 
     .aboutMe-info {
-        >p {
+        gap: 60px;
+        >h1 {
             font-size: 32px !important;
         }
+    }
+
+    .aboutMe {
+        margin-top: 60px;
     }
 }
 
 @media (max-width: 349px) {
 
     .aboutMe-info {
-        >p {
+        >h1 {
             font-size: 24px !important;
         }
     }

@@ -20,14 +20,8 @@
         gap: 16px;
         margin: 0 40px;
 
-        >p {
+        >h1{
             font-size: 40px;
-            font-family: "Montserrat";
-            font-weight: bold;
-        }
-
-        >span {
-            font-family: "OpenSans";
         }
     }
 }
@@ -177,7 +171,7 @@
 @media (max-width:849px) {
 
     .contact-headline {
-        >p {
+        >h1 {
             font-size: 32px !important;
         }
     }
@@ -195,7 +189,7 @@
 @media (max-width: 349px) {
 
     .contact-headline{
-        >p {
+        >h1 {
             font-size: 24px !important;
         }
     }

@@ -24,14 +24,8 @@
         gap: 16px;
         text-align: center;
 
-        >p {
+        >h1 {
             font-size: 40px;
-            font-family: "Montserrat";
-            font-weight: bold;
-        }
-
-        >span {
-            font-family: "OpenSans";
         }
     }
 
@@ -115,25 +109,21 @@
         text-align: center;
         padding: 5px;
         gap: 16px;
-
-        >span {
-            font-family: "OpenSans";
-        }
     }
 }
 
 @media (max-width: 849px) {
 
-    span{
+    p{
         font-size: 14px !important;
     }
 
     .recommandings-title {
-        >p {
+        >h1 {
             font-size: 32px !important;
         }
-        >span {
-            margin-bottom: 80px;
+        >p {
+            margin-bottom: 40px;
         }
     }
 
@@ -145,6 +135,8 @@
         margin-left: unset !important;
         margin-top: unset !important;
         margin-bottom: -150px !important;
+        width: 250px !important;
+        height: 250px !important;
     }
 
     .section6 {
@@ -156,7 +148,7 @@
 @media (max-width: 349px) {
 
     .recommandings-title {
-        >p {
+        >h1 {
             font-size: 24px !important;
         }
     }
