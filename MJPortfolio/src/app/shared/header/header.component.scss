@@ -29,6 +29,7 @@ header {
 .header-links {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     max-width: 600px;
     width: 100%;
 
@@ -36,7 +37,6 @@ header {
         text-decoration: none;
         color: white;
         padding: 8px;
-        border-radius: 20px;
 
         &:hover {
             background-color: white;

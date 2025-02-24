@@ -43,7 +43,7 @@
     "GIT": "GIT",
     "REST_API": "REST API",
     "SCRUM": "SCRUM",
-    "MATERIAL": "MATERIAL",
+    "MATERIAL": "MATERIAL DESIGN",
     "PYTHON": "PYTHON",
     "DJANGO": "DJANGO"
   },
@@ -86,10 +86,10 @@
     "TITLE": "CONTACT",
     "SUBTITLE": "Are you interested in my work or looking for a new teammate? Feel free to reach out—I’m happy to receive all kinds of inquiries and would be glad to provide further information!",
     "PLACEHOLDERS": {
-      "NAME": "Enter your name...",
-      "EMAIL": "Enter your email...",
-      "PHONE": "Enter your phone number...",
-      "MESSAGE": "Write something..."
+      "NAME": "*Enter your name...",
+      "EMAIL": "*Enter your email...",
+      "PHONE": "(Optional) Enter your phone number...",
+      "MESSAGE": "*Write something..."
     },
     "ACCEPT_PRIVACY": "I accept the",
     "PRIVACY_LINK": "Privacy Policy",

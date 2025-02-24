@@ -43,7 +43,7 @@
     "GIT": "GIT",
     "REST_API": "REST-API",
     "SCRUM": "SCRUM",
-    "MATERIAL": "MATERIAL",
+    "MATERIAL": "MATERIAL DESIGN",
     "PYTHON": "PYTHON",
     "DJANGO": "DJANGO"
   },
@@ -87,10 +87,10 @@
     "SUBTITLE": "Sind Sie an meiner Arbeit interessiert oder suchen Sie ein neues Teammitglied? Schreiben Sie mir gerne – ich freue mich über jede Anfrage und gebe gerne weitere Informationen!",
     
     "PLACEHOLDERS": {
-      "NAME": "Gib deinen Namen ein...",
-      "EMAIL": "Gib deine E-Mail ein...",
-      "PHONE": "Gib deine Telefonnummer ein...",
-      "MESSAGE": "Schreibe etwas..."
+      "NAME": "*Gib deinen Namen ein...",
+      "EMAIL": "*Gib deine E-Mail ein...",
+      "PHONE": "(Optional) Gib deine Telefonnummer ein... ",
+      "MESSAGE": "*Schreibe etwas..."
     },
 
     "ACCEPT_PRIVACY": "Ich akzeptiere die",

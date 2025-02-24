@@ -17,7 +17,7 @@ import { ContactformComponent } from '../contactform/contactform.component';
     RecommandingsComponent,
     ContactformComponent,
 ],
-  templateUrl: './landing-page.component.html',
+  templateUrl: './landing-page.component.html', 
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {

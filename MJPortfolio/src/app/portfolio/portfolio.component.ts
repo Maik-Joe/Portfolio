@@ -27,7 +27,7 @@ export class PortfolioComponent {
         'git.icon.png',
         'firebase.icon.png'
       ],
-      demoLink: 'https://join-app-demo.com',
+      demoLink: 'http://maik-joe-sedlmaier.developerakademie.net/join-374-main',
       githubLink: 'https://github.com/Maik-Joe/Join-.git'
     },
     {
@@ -44,7 +44,7 @@ export class PortfolioComponent {
         'js.icon.png',
         'api.icon.png'
       ],
-      demoLink: 'https://hogwarts-api-demo.com',
+      demoLink: 'http://maik-joe-sedlmaier.developerakademie.net/hogwarts',
       githubLink: 'https://github.com/Maik-Joe/HogwartsAPI.git'
     },
     {
@@ -60,7 +60,7 @@ export class PortfolioComponent {
         'css.icon.png',
         'js.icon.png'
       ],
-      demoLink: 'https://el-pollo-loco-demo.com',
+      demoLink: 'http://maik-joe-sedlmaier.developerakademie.net/el%20pollo%20loco',
       githubLink: 'https://github.com/Maik-Joe/El-pollo-loco.git'
     }
   ];

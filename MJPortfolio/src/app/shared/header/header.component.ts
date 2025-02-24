@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -11,28 +12,42 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  isMenuOpen = false;
+  isMenuOpen: boolean = false;
 
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('de');
+  constructor(
+    private translate: TranslateService,
+    @Inject(PLATFORM_ID) private platformId: object
+  ) {
+    let savedLang: string | null = null;
+    
+    if (isPlatformBrowser(this.platformId)) {
+      savedLang = localStorage.getItem('selectedLanguage');
+    }
+
+    const defaultLang: string = savedLang ?? 'de';
+    this.translate.setDefaultLang(defaultLang);
+    this.translate.use(defaultLang);
   }
 
-  switchLanguage(lang: string) {
+  switchLanguage(lang: string): void {
     this.translate.use(lang);
+
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('selectedLanguage', lang);
+    }
   }
 
-  toggleMenu() {
+  toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  closeMenu() {
+  closeMenu(): void {
     this.isMenuOpen = false;
   }
 
-  closeMenuOnOverlayClick(event: Event) {
+  closeMenuOnOverlayClick(event: Event): void {
     if ((event.target as HTMLElement).tagName === 'NAV') {
       this.closeMenu();
     }
   }
-  
 }
