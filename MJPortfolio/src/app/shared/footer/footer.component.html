@@ -2,19 +2,19 @@
     <div class="footer-content">
       <div class="footer-content-inline">
         <div class="footer-links">
-          <a href="#hero">
+          <a (click)="scrollToTop()">
             <img src="./../../../assets/icons/icononly_transparent_nobuffer.png">
             <p>BACK TO TOP</p>
-          </a>
+          </a>          
         </div>
         <div class="reserved">
           <p>©Design by Thomas Gajda</p>
           <p>©2024 Maik Joe Sedlmaier</p>
         </div>
         <div class="footer-legals">
-          <a href="legalnotice">
+          <a (click)="scrollToTop()" routerLink="/legalnotice">
             {{ 'FOOTER.LEGAL_NOTICE' | translate }}
-          </a>
+          </a>          
         </div>
       </div>
     </div>

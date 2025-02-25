@@ -22,7 +22,7 @@
         gap: 16px;
         margin: 0 40px;
 
-        >h1{
+        >h1 {
             font-size: 40px;
         }
     }
@@ -157,7 +157,6 @@
 
     .success-message {
         height: 20px;
-        margin-top: 20px;
         text-align: center;
         font-size: 16px;
         color: green;
@@ -165,7 +164,15 @@
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
     }
+}
 
+@media (max-width:1099px) {
+
+    .contact-headline {
+        >h1 {
+            padding-top: 80px;
+        }
+    }
 }
 
 @media (max-width:849px) {
@@ -176,7 +183,8 @@
         }
     }
 
-    input, textarea {
+    input,
+    textarea {
         font-size: 14px !important;
         padding: 5px !important;
     }
@@ -188,7 +196,7 @@
 
 @media (max-width: 349px) {
 
-    .contact-headline{
+    .contact-headline {
         >h1 {
             font-size: 24px !important;
         }

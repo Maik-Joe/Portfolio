@@ -90,6 +90,15 @@ a {
     text-align: center;
 }
 
+@media (max-width:1099px) {
+
+    .skills-info {
+        >h1 {
+            padding-top: 80px;
+        }
+    }
+}
+
 @media (max-width:849px) {
 
     .skills-info {

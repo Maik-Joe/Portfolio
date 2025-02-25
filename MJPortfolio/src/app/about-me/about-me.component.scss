@@ -115,6 +115,16 @@
     }
 }
 
+@media (max-width:1099px) {
+
+    .aboutMe-info {
+        gap: 60px;
+        >h1 {
+            padding-top: 40px;
+        }
+    }
+}
+
 @media (max-width:849px) {
 
     .abilities{

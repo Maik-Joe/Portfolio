@@ -1,13 +1,23 @@
 <header>
     <div class="header-content">
         <div class="icon">
-            <a href="#hero"><img src="./../../../assets/icons/icononly_transparent_nobuffer.png"></a>
+            <a routerLink="/" fragment="hero" (click)="navigateToSection('hero')">
+                <img src="./../../../assets/icons/icononly_transparent_nobuffer.png">
+            </a>
         </div>
         <nav class="header-links">
-            <a href="#aboutMe">{{ 'HEADER.ABOUT_ME' | translate }}</a>
-            <a href="#skills">{{ 'HEADER.SKILLS' | translate }}</a>
-            <a href="#portfolio">{{ 'HEADER.PORTFOLIO' | translate }}</a>
-            <a href="#contactMe">{{ 'HEADER.CONTACT_ME' | translate }}</a>
+            <a routerLink="/" fragment="aboutMe" (click)="navigateToSection('aboutMe')">
+                {{ 'HEADER.ABOUT_ME' | translate }}
+            </a>
+            <a routerLink="/" fragment="skills" (click)="navigateToSection('skills')">
+                {{ 'HEADER.SKILLS' | translate }}
+            </a>
+            <a routerLink="/" fragment="portfolio" (click)="navigateToSection('portfolio')">
+                {{ 'HEADER.PORTFOLIO' | translate }}
+            </a>
+            <a routerLink="/" fragment="contactMe" (click)="navigateToSection('contactMe')">
+                {{ 'HEADER.CONTACT_ME' | translate }}
+            </a>
 
             <div class="language">
                 <img src="./../../../assets/icons/germany_11948652.png" (click)="switchLanguage('de')"
@@ -25,12 +35,19 @@
     </div>
 </header>
 
-
 <nav class="mobile-menu" [ngClass]="{'open': isMenuOpen}" (click)="closeMenuOnOverlayClick($event)">
-    <a href="#aboutMe" (click)="closeMenu()">{{ 'HEADER.ABOUT_ME' | translate }}</a>
-    <a href="#skills" (click)="closeMenu()">{{ 'HEADER.SKILLS' | translate }}</a>
-    <a href="#portfolio" (click)="closeMenu()">{{ 'HEADER.PORTFOLIO' | translate }}</a>
-    <a href="#contactMe" (click)="closeMenu()">{{ 'HEADER.CONTACT_ME' | translate }}</a>
+    <a routerLink="/" fragment="aboutMe" (click)="navigateToSection('aboutMe'); closeMenu()">
+        {{ 'HEADER.ABOUT_ME' | translate }}
+    </a>
+    <a routerLink="/" fragment="skills" (click)="navigateToSection('skills'); closeMenu()">
+        {{ 'HEADER.SKILLS' | translate }}
+    </a>
+    <a routerLink="/" fragment="portfolio" (click)="navigateToSection('portfolio'); closeMenu()">
+        {{ 'HEADER.PORTFOLIO' | translate }}
+    </a>
+    <a routerLink="/" fragment="contactMe" (click)="navigateToSection('contactMe'); closeMenu()">
+        {{ 'HEADER.CONTACT_ME' | translate }}
+    </a>
 
     <div class="language">
         <img src="./../../../assets/icons/germany_11948652.png" (click)="switchLanguage('de'); closeMenu()"

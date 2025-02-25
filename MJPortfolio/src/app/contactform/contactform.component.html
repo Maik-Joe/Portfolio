@@ -1,4 +1,4 @@
-<div id="contactMe" class="section7">
+<div class="section7">
     <div class="contact">
       <div class="contact-headline">
         <h1>{{ 'CONTACT_FORM.TITLE' | translate }}</h1>
@@ -6,6 +6,7 @@
       </div>
   
       <div class="contact-form-container">
+
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
   
           <input
@@ -83,6 +84,11 @@
               <span>{{ 'CONTACT_FORM.ERRORS.PRIVACY_POLICY' | translate }}</span>
             }
           </div>
+          <div class="success-message">
+            @if (formSubmitted) {
+              <span>{{ 'CONTACT_FORM.SUCCESS' | translate }}</span>
+            }
+          </div>
   
           <div class="submit_btn">
             <button
@@ -93,13 +99,6 @@
               {{ 'CONTACT_FORM.SUBMIT' | translate }}
             </button>
           </div>
-  
-          <div class="success-message">
-            @if (formSubmitted) {
-              <span>{{ 'CONTACT_FORM.SUCCESS' | translate }}</span>
-            }
-          </div>
-  
         </form>
       </div>
     </div>
