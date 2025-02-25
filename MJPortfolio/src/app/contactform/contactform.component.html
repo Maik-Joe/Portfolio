@@ -76,7 +76,9 @@
             <label for="privacyCheck"></label>
             <span>
               {{ 'CONTACT_FORM.ACCEPT_PRIVACY' | translate }}
-              <a href="legalnotice">{{ 'CONTACT_FORM.PRIVACY_LINK' | translate }}</a>
+              <a (click)="scrollToTop()" routerLink="/legalnotice">
+                {{ 'CONTACT_FORM.PRIVACY_LINK' | translate }}
+              </a>          
             </span>
           </div>
           <div class="invalid">
