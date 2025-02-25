@@ -8,14 +8,14 @@ import { RouterModule, Router } from '@angular/router';
 @Component({
   selector: 'app-contactform',
   standalone: true,
-  imports: [FormsModule, TranslateModule, RouterModule],  // ✅ RouterModule importiert
+  imports: [FormsModule, TranslateModule, RouterModule], 
   templateUrl: './contactform.component.html',
   styleUrls: ['./contactform.component.scss']
 })
 export class ContactformComponent {
   http = inject(HttpClient);
-  viewportScroller = inject(ViewportScroller); // ✅ ViewportScroller für Scroll-Funktion
-  router = inject(Router); // ✅ Router für Navigation
+  viewportScroller = inject(ViewportScroller); 
+  router = inject(Router);
 
   contactData = {
     name: '',
@@ -29,7 +29,7 @@ export class ContactformComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://maik-joe-sedlmaier.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: { 'Content-Type': 'text/plain', responseType: 'text' }
@@ -51,7 +51,6 @@ export class ContactformComponent {
   }
 
   private handleSuccess(ngForm: NgForm) {
-    console.log('Form submitted successfully.');
     this.formSubmitted = true;
     ngForm.resetForm();
 
