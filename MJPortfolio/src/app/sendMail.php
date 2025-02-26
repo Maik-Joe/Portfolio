@@ -21,7 +21,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     
             $recipient = 'maik-joe@gmx.de';  
             $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $phone "<br>" . $message ;
+            $message = "From: " . $name . "<br>" . $phone . "<br>" . $message;
     
             $headers   = array();
             $headers[] = 'MIME-Version: 1.0';

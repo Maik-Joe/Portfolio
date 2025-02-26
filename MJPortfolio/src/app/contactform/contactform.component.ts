@@ -32,7 +32,7 @@ export class ContactformComponent {
     endPoint: 'https://maik-joe-sedlmaier.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
-      headers: { 'Content-Type': 'text/plain', responseType: 'text' }
+      headers: { 'Content-Type': 'application/json' }
     }
   };
 
